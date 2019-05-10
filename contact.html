@@ -180,40 +180,29 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="mu-contact-left">
-                  <form class="contactform">                  
-                    <p class="comment-form-author">
-                      <label for="author">Name <span class="required">*</span></label>
-                      <input type="text" required="required" size="30" value="" name="author">
+                  <!-- Form Being TODO-->
+                  <form class="contactform" method="POST" action="https://formspree.io/ENTEREMAIL">
+                    <input type="email" name="email" placeholder="Your email">
+                    <input type="name" name="name" placeholder="Your full name">
+                    <p><!-- Empty line --></p>
+                    <p>You are a:
+                      <select name="person">
+                        <option value="1year">First year IB student</option>
+                        <option value="2year">Second year IB student</option>
+                        <option value="Alumni">IB Alumni</option>
+                        <option value="Parent">Parent</option>
+                        <option value="Other">Other</option>
+                      </select>
                     </p>
-                    <p class="comment-form-email">
-                      <label for="email">Email <span class="required">*</span></label>
-                      <input type="email" required="required" aria-required="true" value="" name="email">
-                    </p>
-                    <p class="comment-form-url">
-                      <label for="subject">I am a  
-                        <select name="person">
-                          <option value="1year">First year IB student</option>
-                          <option value="2year">Second year IB student</option>
-                          <option value="Alumni">IB Alumni</option>
-                          <option value="Parent">Parent</option>
-                          <option value="Other">Other</option>
-                        </select><span class="required">*</span>
-                      </label>
-                    </p>
-                    <p class="comment-form-url">
-                      <label for="subject">Subject</label>
-                      <input type="text" name="subject">  
-                    </p>
-                    <p class="comment-form-comment">
-                      <label for="comment">Message</label>
-                      <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
-                    </p>                
-                    <p class="form-submit">
-                      <input type="submit" value="Send Message" class="mu-post-btn" name="submit">
-                    </p>        
+                    <input type="subject" name="subject" placeholder="Subject">
+                    <p><!-- Empty line --></p>
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button  class="mu-post-btn" type="submit">Send Message</button>
                   </form>
+                  <!-- Form End -->        
                 </div>
               </div>
+
               <div class="col-md-6">
                 <div class="mu-contact-right">
                   <iframe src="https://www.google.com/maps/embed" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
