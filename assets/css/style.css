@@ -31,6 +31,13 @@
 */
 
 /* BASE - Base tyles, Variables, Mixins, etc. */
+hr { /* this doesn't actually work */
+  height: 1px;
+  border:none;
+  color:#cccccc;
+  background-color:#cccccc;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
