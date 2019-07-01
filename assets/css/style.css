@@ -866,10 +866,11 @@ img {
   color: #fff;
   display: inline-block;
   font-size: 18px;
-  height: 40px;
-  line-height: 40px;
-  margin: 0 5px;
-  width: 40px;
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+  margin-bottom: 4px;
+
   -moz-transform: translateY(-1000%);
   -o-transform: translateY(-1000%);
   -ms-transform: translateY(-1000%);
